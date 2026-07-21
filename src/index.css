@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0A0E14;
+}
+
+::selection {
+  background-color: #3B82F6;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0E14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2733;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2b3a4d;
+}
+
+/* Visible keyboard focus for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #3B82F6;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto w-full max-w-content px-6 sm:px-8 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs tracking-[0.2em] uppercase text-accent-light/80;
+  }
+
+  .section-title {
+    @apply font-display text-3xl sm:text-4xl font-semibold text-ink;
+  }
+
+  .glass-card {
+    @apply bg-surface/60 backdrop-blur-xl border border-surface-border rounded-2xl shadow-card;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 font-medium text-white
+      bg-gradient-to-br from-accent to-accent-dark shadow-glow
+      transition-all duration-300 hover:shadow-[0_0_0_1px_rgba(96,165,250,0.4),0_10px_36px_-8px_rgba(59,130,246,0.55)]
+      hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 font-medium text-ink
+      border border-surface-border bg-surface/60 backdrop-blur-xl
+      transition-all duration-300 hover:border-accent/50 hover:text-white hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .tech-badge {
+    @apply inline-flex items-center rounded-full border border-surface-border bg-surface-elevated/80 px-3 py-1
+      text-xs font-mono text-ink-muted transition-colors duration-200;
+  }
+}
