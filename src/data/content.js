@@ -6,8 +6,10 @@ export const profile = {
   email: 'raghavnagpal2217@gmail.com',
   phone: '+91 8569987212',
   location: 'Yamunanagar, India',
+  portfolio: 'https://portfolio-chi-liard-47.vercel.app/',
   linkedin: 'https://linkedin.com/in/raghav-nagpal-9910923aa',
-  resumeUrl: '/Jake_s_Resume__Anonymous_.pdf',
+  leetcode: 'https://leetcode.com/u/raghav2208/',
+  resumeUrl: '/raghav_nagpal_resume.pdf',
 }
 
 export const stats = [
@@ -27,51 +29,51 @@ export const about = {
 
 export const skills = [
   {
-    category: 'Frontend',
-    items: ['React.js', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Tailwind CSS'],
+    category: 'Languages',
+    items: ['C++', 'JavaScript', 'Java', 'Python'],
   },
   {
-    category: 'Backend',
-    items: ['Node.js', 'REST APIs', 'Socket.IO', 'WebSockets', 'WebRTC'],
+    category: 'Technologies',
+    items: ['React.js', 'Node.js', 'Docker', 'Git', 'HTML', 'CSS'],
   },
   {
-    category: 'Database',
-    items: ['MySQL', 'MongoDB'],
+    category: 'Databases',
+    items: ['MySQL'],
   },
   {
-    category: 'Tools',
-    items: ['Git', 'Docker', 'C++', 'Java', 'Python', 'Encryption'],
+    category: 'Other',
+    items: ['WebSockets', 'AI Integration', 'WebRTC', 'REST APIs', 'Tailwind CSS', 'Encryption'],
   },
 ]
 
 export const projects = [
   {
-    title: 'Real-Time Collaborative Code Editor',
+    title: 'Draw Buddy',
     description:
-      'A cloud-based collaborative IDE with a live file tree, terminal, and code editor. Built with real-time file synchronization, container management, WebRTC collaboration, Redis Pub/Sub, and sub-100ms latency.',
+      'A feature-rich real-time drawing platform with zoom, shape resizing, infinite canvas, undo-redo, and peer-to-peer shape transfer through Socket.IO serialization.',
     image:
-      'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop',
-    tech: ['React.js', 'Node.js', 'Socket.IO', 'Docker', 'WebRTC', 'MongoDB'],
+      'https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1200&auto=format&fit=crop',
+    tech: ['TypeScript', 'Node.js', 'WebSockets', 'Tailwind CSS', 'Socket.IO'],
     period: 'March 2026 - May 2026',
     demo: null,
   },
   {
-    title: 'Edusity Educational Website',
+    title: 'Real-Time Collaborative Code Editor',
     description:
-      'A responsive React website for an educational institution with interactive sections, reusable components, and real-time contact functionality.',
+      'A cloud-based collaborative IDE with a live file tree, terminal, and code editor. Built with a WebSocket backend, 30+ real-time file I/O and container operations, WebRTC collaboration, Redis Pub/Sub, and sub-100ms latency.',
     image:
-      'https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop',
-    tech: ['React.js', 'HTML', 'CSS', 'JavaScript'],
+      'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop',
+    tech: ['React.js', 'Node.js', 'Socket.IO', 'Docker', 'WebRTC', 'MongoDB'],
     period: 'January 2026 - February 2026',
     demo: null,
   },
   {
-    title: 'DrawBuddy',
+    title: 'Edusity - React-based Educational Website',
     description:
-      'A real-time drawing platform with zoom, shape resizing, infinite canvas, undo-redo, and peer shape transfer through Socket.IO serialization.',
+      'An interactive and responsive educational institution website with reusable React components, a clean user interface, and real-time contact functionality.',
     image:
-      'https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1200&auto=format&fit=crop',
-    tech: ['TypeScript', 'Node.js', 'WebSockets', 'Tailwind CSS', 'Socket.IO'],
+      'https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop',
+    tech: ['React.js', 'HTML', 'CSS', 'JavaScript'],
     period: 'November 2025 - December 2025',
     demo: null,
   },

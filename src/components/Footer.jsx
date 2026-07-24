@@ -1,4 +1,5 @@
 import { FiLinkedin, FiMail } from 'react-icons/fi'
+import { SiLeetcode } from 'react-icons/si'
 import { profile } from '../data/content'
 
 export default function Footer() {
@@ -14,6 +15,7 @@ export default function Footer() {
         <div className="flex items-center gap-3">
           {[
             { icon: FiLinkedin, href: profile.linkedin, label: 'LinkedIn' },
+            { icon: SiLeetcode, href: profile.leetcode, label: 'LeetCode' },
             { icon: FiMail, href: `mailto:${profile.email}`, label: 'Email' },
           ].map(({ icon: Icon, href, label }) => (
             <a

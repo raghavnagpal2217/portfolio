@@ -1,12 +1,12 @@
-import { FiMonitor, FiServer, FiDatabase, FiTool } from 'react-icons/fi'
+import { FiCode, FiCpu, FiDatabase, FiTool } from 'react-icons/fi'
 import Reveal from './Reveal'
 import { skills } from '../data/content'
 
 const icons = {
-  Frontend: FiMonitor,
-  Backend: FiServer,
-  Database: FiDatabase,
-  Tools: FiTool,
+  Languages: FiCode,
+  Technologies: FiCpu,
+  Databases: FiDatabase,
+  Other: FiTool,
 }
 
 export default function Skills() {

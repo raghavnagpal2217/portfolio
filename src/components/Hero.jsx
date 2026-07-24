@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
-import { FiLinkedin, FiMail, FiArrowDown } from 'react-icons/fi'
+import { FiLinkedin, FiMail, FiArrowDown, FiFileText } from 'react-icons/fi'
+import { SiLeetcode } from 'react-icons/si'
 import { profile } from '../data/content'
 
 const container = {
@@ -67,11 +68,15 @@ export default function Hero() {
             >
               Contact Me
             </a>
+            <a href={profile.resumeUrl} target="_blank" rel="noreferrer" className="btn-secondary">
+              <FiFileText size={18} /> Resume
+            </a>
           </motion.div>
 
           <motion.div variants={item} className="mt-10 flex items-center gap-4">
             {[
               { icon: FiLinkedin, href: profile.linkedin, label: 'LinkedIn' },
+              { icon: SiLeetcode, href: profile.leetcode, label: 'LeetCode' },
               { icon: FiMail, href: `mailto:${profile.email}`, label: 'Email' },
             ].map(({ icon: Icon, href, label }) => (
               <a
