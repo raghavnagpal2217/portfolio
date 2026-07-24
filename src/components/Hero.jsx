@@ -46,7 +46,7 @@ export default function Hero() {
             variants={item}
             className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08] text-ink"
           >
-            Hi, I'm {profile.name.split(' ')[0]}
+            Hi, I'm {profile.name}
             <span className="text-accent">.</span>
             <br />
             <span className="bg-gradient-to-r from-accent-light via-accent to-accent-dark bg-clip-text text-transparent">
