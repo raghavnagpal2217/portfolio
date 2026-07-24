@@ -1,5 +1,4 @@
-import { FiGlobe, FiMail, FiLinkedin, FiMapPin, FiPhone } from 'react-icons/fi'
-import { SiLeetcode } from 'react-icons/si'
+import { FiMail, FiLinkedin, FiMapPin, FiPhone } from 'react-icons/fi'
 import Reveal from './Reveal'
 import { profile } from '../data/content'
 
@@ -8,8 +7,6 @@ export default function Contact() {
     { icon: FiMail, label: profile.email, href: `mailto:${profile.email}` },
     { icon: FiPhone, label: profile.phone, href: `tel:${profile.phone.replace(/\s/g, '')}` },
     { icon: FiLinkedin, label: 'linkedin.com/in/raghav-nagpal-9910923aa', href: profile.linkedin },
-    { icon: SiLeetcode, label: 'leetcode.com/u/raghav2208', href: profile.leetcode },
-    { icon: FiGlobe, label: 'portfolio-chi-liard-47.vercel.app', href: profile.portfolio },
     { icon: FiMapPin, label: profile.location, href: null },
   ]
 
@@ -36,6 +33,7 @@ export default function Contact() {
                     <span className="text-sm text-ink break-all">{label}</span>
                   </div>
                 )
+
                 return href ? (
                   <a key={label} href={href} target="_blank" rel="noreferrer" className="block">
                     {content}
