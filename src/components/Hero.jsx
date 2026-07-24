@@ -43,16 +43,22 @@ export default function Hero() {
           </motion.div>
 
           <motion.h1
-            variants={item}
-            className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08] text-ink"
-          >
-            Hi, I'm {profile.name}
-            <span className="text-accent">.</span>
-            <br />
-            <span className="bg-gradient-to-r from-accent-light via-accent to-accent-dark bg-clip-text text-transparent">
-              {profile.title}
-            </span>
-          </motion.h1>
+  variants={item}
+  className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-ink"
+>
+  <span className="block">
+    Hi, I'm
+  </span>
+
+  <span className="block mt-1">
+    {profile.name}
+    <span className="text-accent">.</span>
+  </span>
+
+  <span className="block mt-4 bg-gradient-to-r from-accent-light via-accent to-accent-dark bg-clip-text text-transparent">
+    {profile.title}
+  </span>
+</motion.h1>
 
           <motion.p
             variants={item}
