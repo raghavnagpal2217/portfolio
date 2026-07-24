@@ -68,9 +68,7 @@ export default function Hero() {
             >
               Contact Me
             </a>
-            <a href={profile.resumeUrl} target="_blank" rel="noreferrer" className="btn-secondary">
-              <FiFileText size={18} /> Resume
-            </a>
+            
           </motion.div>
 
           <motion.div variants={item} className="mt-10 flex items-center gap-4">
