@@ -16,12 +16,16 @@ export default function Footer() {
           {[
             { icon: FiLinkedin, href: profile.linkedin, label: 'LinkedIn' },
             { icon: SiLeetcode, href: profile.leetcode, label: 'LeetCode' },
-            { icon: FiMail, href: `mailto:${profile.email}`, label: 'Email' },
+            {
+              icon: FiMail,
+              href: `https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`,
+              label: 'Email',
+            },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
               href={href}
-              target={href.startsWith('http') ? '_blank' : undefined}
+              target="_blank"
               rel="noreferrer"
               aria-label={label}
               className="flex h-9 w-9 items-center justify-center rounded-full border border-surface-border text-ink-muted transition-colors hover:border-accent/50 hover:text-accent-light"
@@ -31,7 +35,9 @@ export default function Footer() {
           ))}
         </div>
 
-        <p className="font-mono text-xs text-ink-faint">Built with React &amp; Tailwind CSS</p>
+        <p className="font-mono text-xs text-ink-faint">
+          Built with React &amp; Tailwind CSS
+        </p>
       </div>
     </footer>
   )
