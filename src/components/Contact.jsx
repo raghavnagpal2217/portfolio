@@ -4,10 +4,26 @@ import { profile } from '../data/content'
 
 export default function Contact() {
   const contactLinks = [
-    { icon: FiMail, label: profile.email, href: `mailto:${profile.email}` },
-    { icon: FiPhone, label: profile.phone, href: `tel:${profile.phone.replace(/\s/g, '')}` },
-    { icon: FiLinkedin, label: 'linkedin.com/in/raghav-nagpal-9910923aa', href: profile.linkedin },
-    { icon: FiMapPin, label: profile.location, href: null },
+    {
+      icon: FiMail,
+      label: profile.email,
+      href: `https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`,
+    },
+    {
+      icon: FiPhone,
+      label: profile.phone,
+      href: `tel:${profile.phone.replace(/\s/g, '')}`,
+    },
+    {
+      icon: FiLinkedin,
+      label: 'linkedin.com/in/raghav-nagpal-9910923aa',
+      href: profile.linkedin,
+    },
+    {
+      icon: FiMapPin,
+      label: profile.location,
+      href: null,
+    },
   ]
 
   return (
@@ -35,7 +51,13 @@ export default function Contact() {
                 )
 
                 return href ? (
-                  <a key={label} href={href} target="_blank" rel="noreferrer" className="block">
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block"
+                  >
                     {content}
                   </a>
                 ) : (
